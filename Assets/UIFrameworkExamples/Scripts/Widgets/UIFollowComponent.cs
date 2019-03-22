@@ -12,11 +12,11 @@ namespace deVoid.UIFramework.Examples
 	/// the screen.
 	/// </summary>
 	public class UIFollowComponent : MonoBehaviour {
-		[SerializeField] private TextMeshProUGUI label;
-		[SerializeField] private Image icon;
-		[SerializeField] private bool clampAtBorders;
-		[SerializeField] private bool rotateWhenClamped;
-		[SerializeField] private RectTransform rotatingElement;
+		[SerializeField] private TextMeshProUGUI label = null;
+		[SerializeField] private Image icon = null;
+		[SerializeField] private bool clampAtBorders = true;
+		[SerializeField] private bool rotateWhenClamped = true;
+		[SerializeField] private RectTransform rotatingElement = null;
 
 		public event Action<UIFollowComponent> LabelDestroyed;
 

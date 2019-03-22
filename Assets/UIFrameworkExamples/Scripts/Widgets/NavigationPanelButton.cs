@@ -9,9 +9,9 @@ namespace deVoid.UIFramework.Examples
     public class NavigationPanelButton : MonoBehaviour
     {
         [SerializeField] 
-        private TextMeshProUGUI buttonLabel;
+        private TextMeshProUGUI buttonLabel = null;
         [SerializeField] 
-        private Image icon;
+        private Image icon = null;
 
         public event Action<NavigationPanelButton> ButtonClicked;
         

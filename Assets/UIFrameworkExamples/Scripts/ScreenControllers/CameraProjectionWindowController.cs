@@ -19,7 +19,7 @@ namespace deVoid.UIFramework.Examples
     public class CameraProjectionWindowController : AWindowController<CameraProjectionWindowProperties>
     {
         [SerializeField] 
-        private UIFollowComponent followTemplate;
+        private UIFollowComponent followTemplate = null;
 
         private List<UIFollowComponent> allElements = new List<UIFollowComponent>();
 

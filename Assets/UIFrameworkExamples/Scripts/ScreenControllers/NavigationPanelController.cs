@@ -8,9 +8,9 @@ using UnityEngine;
 [Serializable] 
 public class NavigationPanelEntry
 {
-    [SerializeField] private Sprite sprite;
-    [SerializeField] private string buttonText;
-    [SerializeField] private string targetScreen;
+    [SerializeField] private Sprite sprite = null;
+    [SerializeField] private string buttonText = "";
+    [SerializeField] private string targetScreen = "";
     
     public Sprite Sprite {
         get { return sprite; }

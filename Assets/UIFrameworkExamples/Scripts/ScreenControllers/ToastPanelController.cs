@@ -11,10 +11,10 @@ namespace deVoid.UIFramework.Examples
     /// </summary>
     public class ToastPanelController : APanelController
     {
-        [SerializeField] private RectTransform toastRect;
-        [SerializeField] private float toastDuration;
-        [SerializeField] private float toastPause;
-        [SerializeField] private Ease toastEase;
+        [SerializeField] private RectTransform toastRect = null;
+        [SerializeField] private float toastDuration = 0.5f;
+        [SerializeField] private float toastPause = 2f;
+        [SerializeField] private Ease toastEase = Ease.Linear;
         
         private bool isToasting;
         

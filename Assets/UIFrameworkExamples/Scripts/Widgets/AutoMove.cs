@@ -6,11 +6,11 @@ namespace deVoid.UIFramework.Examples
 {
     public class AutoMove : MonoBehaviour
     {
-        [SerializeField] private Vector2 minMaxPosition;
-        [SerializeField] private float speed;
-        [SerializeField] private Vector2 minMaxPositionY;
-        [SerializeField] private float speedY;
-        [SerializeField] private Vector3 rotationSpeed;
+        [SerializeField] private Vector2 minMaxPosition = Vector2.zero;
+        [SerializeField] private float speed = 0f;
+        [SerializeField] private Vector2 minMaxPositionY = Vector2.zero;
+        [SerializeField] private float speedY = 0f;
+        [SerializeField] private Vector3 rotationSpeed = Vector3.zero;
 
         private void Update() {
             transform.Rotate(rotationSpeed * Time.deltaTime, Space.Self);

@@ -8,9 +8,9 @@ namespace deVoid.UIFramework.Examples
     public class UIDemoController : MonoBehaviour
     {
         [SerializeField] private UISettings defaultUISettings = null;
-        [SerializeField] private FakePlayerData fakePlayerData;
-        [SerializeField] private Camera cam;
-        [SerializeField] private Transform transformToFollow;
+        [SerializeField] private FakePlayerData fakePlayerData = null;
+        [SerializeField] private Camera cam = null;
+        [SerializeField] private Transform transformToFollow = null;
 
         private UIFrame uiFrame;
 
